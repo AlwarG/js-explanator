@@ -1,0 +1,44 @@
+{
+  "array": {
+    "copying an aray": {
+      "code": "let numbers = [1, 2, 3];\nlet numbersCopy = [...numbers];",
+      "explanation": "The contents of the numbers were expanded and thrown out of the array and it is covered by new array. Then it is assigned to nnumbersCopy array"
+    },
+    "merge two arrays": {
+      "code": "let arr1 = [1, 2];\nlet arr2 = [3, 4];\nlet output = [...arr1, ...arr2]; // [1, 2, 3, 4]",
+      "explanation": "The contents of the arr1, arr2 were expanded and thrown out of the array and it is covered by new array. Then it is assigned to output array"
+    },
+    "maximum value of an array": {
+      "code": "let arr = [3, 2, 6, 4];\nlet maximum = Math.max(...arr); // 6",
+      "explanation": "The contents of the arr were expanded and thrown out of the array and it is passed to the Math.max function to get the maximum value from the array"
+    },
+    "minimum value of an array": {
+      "code": "let arr = [3, 2, 6, 4];\nlet minimum = Math.min(...arr); // 2",
+      "explanation": "The contents of the arr were expanded and thrown out of the array and it is passed to the Math.min function to get the minimum value from the array"
+    },
+    "first index of an element": {
+      "code": "let arr = [1, 2, 1, 3];\nlet firstIndex = arr.indexOf(1) // 0",
+      "explanation": "<b>indexof</b> method returns the first index of a given element"
+    },
+    "last index of an element": {
+      "code": "let arr = [1, 2, 1, 3];\nlet lastIndex = arr.lastIndexOf(1); // 0",
+      "explanation": "<b>lastIndexOf</b> method returns the last index of a given element"
+    },
+    "filter an array": {
+      "code": "let arr = [4, 2, 5, 6, 3];\nlet filteredArr = arr.filter((ele) => ele %2 === 0); // [4, 2, 6]",
+      "explanation": "<b>filter</b> method returns the new filtered array based on our condition(Example: Remove Odd Number)"
+    },
+    "find the particular element": {
+      "code": "let arr = ['faher', 'mother', 'son', 'daughter'];\n arr.find(element => element === 'son'); // son",
+      "explanation": "<b>find</b> method returns the first element based on our condition(Example: element should be son)"
+    },
+    "Reverse an array": {
+      "code": "let arr = [1, 2, 3, 4];\nlet reversedArr = arr.reverse(); // [4, 3, 2, 1]",
+      "explanation": "<b>reverse</b> method returns the reversed Arr"
+    },
+    "Removes the first element": {
+      "code": "let arr = [1, 2, 3, 4];\narr.shift(); // [2, 3, 4]",
+      "explanation": "<b>shift</b> method removes the first element"
+    }
+  }
+}
