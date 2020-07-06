@@ -2,11 +2,13 @@
   "name": "js-explanator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://alwarg.github.io/js-explanator",
   "scripts": {
     "prebuild": "NODE_ENV=production yarn build:styles",
     "build": "react-scripts build",
     "build:styles": "postcss src/styles.css -o src/App.css",
-    "deploy": "node lib/deploy.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "prestart": "yarn build:styles",
     "start": "react-scripts start",
@@ -35,6 +37,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.4",
+    "gh-pages": "^3.1.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "postcss-cli": "^7.1.1",
