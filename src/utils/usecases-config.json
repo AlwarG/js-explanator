@@ -2,7 +2,7 @@
   "array": {
     "copying an aray": {
       "code": "let numbers = [1, 2, 3];\nlet numbersCopy = [...numbers];",
-      "explanation": "The contents of the numbers were expanded and thrown out of the array and it is covered by new array. Then it is assigned to nnumbersCopy array"
+      "explanation": "The contents of the numbers were expanded and thrown out of the array and it is covered by new array. Then it is assigned to numbersCopy array"
     },
     "merge two arrays": {
       "code": "let arr1 = [1, 2];\nlet arr2 = [3, 4];\nlet output = [...arr1, ...arr2]; // [1, 2, 3, 4]",
@@ -39,6 +39,50 @@
     "Removes the first element": {
       "code": "let arr = [1, 2, 3, 4];\narr.shift(); // [2, 3, 4]",
       "explanation": "<b>shift</b> method removes the first element"
+    }
+  },
+  "object": {
+    "Getting keys": {
+      "code": "let obj = { a: '1', b: '2'};\nlet keysArr = Object.keys(obj); // ['a', 'b']",
+      "explanation": "<b>Object.keys</b> method returns the object keys array"
+    },
+    "Getting Values": {
+      "code": "let obj = { a: '1', b: '2'};\nlet valuesArr = Object.Values(obj); // ['1', '2']",
+      "explanation": "<b>Object.Values</b> method returns the object values array"
+    },
+    "Getting Entries": {
+      "code": "let obj = { a: 'a', b: 'b'};\nlet valuesArr = Object.Values(obj); // [['a', '1'], ['b', '2']]",
+      "explanation": "<b>Object.Values</b> method returns the object entries array"
+    },
+    "Shallow Copy": {
+      "code": "let obj = { a: 'a', b: 'b'};\nlet copiedObj = Object.assign({}, obj); // { a: 'a', b: 'b'}",
+      "explanation": "Here <b>Object.assign</b> method copies the properties of obj to an empty object"
+    },
+    "Check empty object": {
+      "code": "let obj = {};\nlet isEmptyObj = Object.keys(obj).length > 0; // false",
+      "explanation": "<b>Object.keys</b> returns the empty array is no properties are present"
+    }
+  },
+  "string": {
+    "String starts with some other string": {
+      "code": "let str = 'This is good';\nlet isStratswithThis = str.startsWith('This'); // true",
+      "explanation": "<b>stratsWith</b> method used to determine the given string is present at the start string of the another string"
+    },
+    "String ends with some other string": {
+      "code": "let str = 'This is good';\nlet isendswithgood = str.endsWith('good'); // true",
+      "explanation": "<b>endsWith</b> method used to determine the given string is present at the end string of the another string"
+    },
+    "String includes with some other string": {
+      "code": "let str = 'I am alwar. I am writing an code';\nlet hasIString = str.includes('I'); // true",
+      "explanation": "<b>includes</b> method used to determine the given string is present at the another string"
+    },
+    "replace a particular string": {
+      "code": "let str = 'I am alwar';\nlet newStr = str.replace('alwar', 'developer'); // I am developer",
+      "explanation": "<b>replace</b> method replaces the alwar string with the developer string"
+    },
+    "Remove first and last space": {
+      "code": "let str = ' Alwar ';\nlet newStr = str.trim() // Alwar",
+      "explanation": "<b>trim</b> method removes whitespace from both ends of a string"
     }
   }
 }

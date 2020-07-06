@@ -17,10 +17,6 @@ let routes = [
     name: 'String',
     url: 'string',
   },
-  {
-    name: 'Date',
-    url: 'date',
-  },
 ];
 
 function App() {

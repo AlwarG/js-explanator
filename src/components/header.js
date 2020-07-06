@@ -9,7 +9,7 @@ function Header(props = {}) {
     >
       <div className="container m-auto text-center">
         <h1 className="text-5xl font-black">JS Explanator</h1>
-        <p>The list of usecases to learn javascript quickly.</p>
+        <p>The list of common usecases to learn javascript quickly.</p>
       </div>
     </header>
   );
